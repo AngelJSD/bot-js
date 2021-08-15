@@ -14,6 +14,7 @@ function shuffle(array) {
 }
 
 const trivia = (() => {
+  // TODO: Implement help function
   let currentTrivia = -1;
   let questions = [];
 

@@ -2,6 +2,7 @@ const { Client, Intents } = require('discord.js');
 require('dotenv').config();
 
 const trivia = require('./commands/trivia');
+const lol = require('./commands/lol');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
@@ -13,6 +14,7 @@ const commandList = {
     },
   },
   trivia,
+  lol,
 }
 
 client.on('ready', () => {
